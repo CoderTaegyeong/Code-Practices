@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+input[type="text"]{color:#3399FF;
+	background:#63C;}
+input[type="password"]{color:#99FF00;
+	background:#FF0;}
+
+</style>
+</head>
+
+<body>
+<form>
+	아이디:<input type="text" size="10" maxlength="8" autofocus placeholder="8자까지만 입력"><br>
+    비밀번호:<input type="password"><br>
+    이름:<input type="text"><br>
+    나이:<input type="text"><br>
+    개인정보:<input type="radio" name="info" checked>공개<input type="radio" name="info">비공개<br>
+    성별:<input type="radio" name="gender" checked>여자<input type="radio" name="gender">남자<br>
+    취미:<input type="checkbox" name="hobby1">영화감상
+    <input type="checkbox" name="hobby2">등산
+    <input type="checkbox" name="hobby3">스키
+    <input type="checkbox" name="hobby4">독서
+    <input type="checkbox" name="hobby5">악기 연주<br>
+    이메일:<input type="text">@<select size="2">
+    	<option>선택</option>
+    	<option>naver.com</option>
+        <option>daum.net</option>
+        <option>gmail.com</option>
+        <option>직접 입력</option>
+        </select><br>
+    
+    <select>
+    	<optgroup label="HTML5">
+    	<option>Multimedia Tag</option>
+    	<option>connectivity</option>
+        <option>Device Access</option>
+        <optgroup label="CSS3">
+        </optgroup>
+        <option>Animation</option>
+        <option>3D Transform</option>
+        </optgroup>
+        </select><br>
+     자기소개:<textarea rows="5" cols="80"></textarea><br>
+     <button type="button">검색</button><br>
+     <button type="submit">확인</button><br>
+     <button type="reset">다시 쓰기</button><br>
+     파일첨부:<input type="file">*2MB까지 가능<br>
+     전화번호:<input type="text" size="3" value="010" disabled>-<input type="text" size="4" maxlength="4">-<input type="text"  size="4" maxlength="4">
+</form>
+</body>
+</html>
