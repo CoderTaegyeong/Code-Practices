@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Navigation Menu Bar Practice</title>
+<!--Original Code from http://css-tricks.com/solved-with-css-dropdown-menus/, modified by me.-->
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+	li{
+		display:block;
+		transition-duration:0.5s;
+		color:azure;
+		background-color:cornflowerblue;
+		float:left;
+		text-align:justify;
+		/*What is rem and em? Check this site:"https://snook.ca/archives/html_and_css/font-size-with-rem" According to this website, it seems that they are very similar to each other, but rem is more flexible with the size of modern websites.*/
+		padding:1rem;
+		position:relative;
+		text-decoration:none;
+	}
+	li:hover{
+		cursor:pointer;
+		background-color:darkblue;
+	}
+	ul li ul{
+		visibility:hidden;
+		opacity:0;
+		position:absolute;
+		transition:all 0.5s ease;
+		margin-top:1rem;
+		left:0;
+		display:none;
+	}
+	ul li:hover>ul,
+	/*"Focus Within lets you style elements when they are focused or contain a focused element, following the Selectors Level 4 specification." Quote from:<https://github.com/jonathantneal/focus-within>*/
+	ul li:focus-within>ul,
+	ul li ul:hover{
+		visibility:visible;
+		opacity:1;
+		display:block;
+	}
+	ul li ul li{
+		clear:both;
+		width:100%;
+	}
+	a{
+		text-decoration:none;
+	}
+	nav{
+		font-family:monospace;
+	}
+	ul{
+		background:cornflowerblue;
+		list-style:none;
+		margin:0;
+		padding-left:0;
+	}
+	li a{
+		color:#fff;
+	}
+	#footer{
+		font-weight:bold;
+	}
+</style>
+</head>
+
+<body>
+<div id="overallbox">
+<nav role="navigation">
+	<ul>
+    	<li><a href="#">Home</a></li>
+        <li><a href="#">Illustrations</a>
+        	<ul class="dropdown1">
+                <li><a href="#">April 2019</a></li>
+                <li><a href="#">May 2019</a></li>
+                <li><a href="#">June 2019</a></li>
+            </ul>
+         </li>
+         <li><a href="#">HTML</a>
+         	<ul class="dropdown2">
+                <li><a href="#">April 2019</a></li>
+                <li><a href="#">May 2019</a></li>
+                <li><a href="#">June 2019</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div id="footer">&copy;Copyright by Taegyeong</div>
+</div>
+</body>
+</html>
