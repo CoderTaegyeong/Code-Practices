@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+*{
+	font-family:Verdana;
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+.box{
+	border:1px solid #CCC;
+	border-radius:30px 30px;
+	width:250px;
+	height:150px;
+	padding:15px;
+}
+.member{
+	display:inline;
+}
+
+#login-btn, #id-pass{
+	display:inline-block;
+	vertical-align:top;
+}
+span{
+	width:20px;
+	display:inline-block;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:#36F;
+}
+.pass{
+	margin-top:5px;
+}
+#login-btn button{
+	padding:20px;
+	margin-left:20px;
+	background-color:#FFF;
+	border-radius:10px;
+	cursor:pointer;
+}
+.login-box input{
+	width:100px;
+	height:25px;
+}
+.btns li{
+	display:inline;
+	margin-left:10px;
+}
+h2{
+	margin-bottom:10px;
+}
+.pass{
+	margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h2>Member Login</h2>
+	<ul class="login-box">
+    	<li id="id-pass">
+        	<ul>
+    			<li><span>ID</span> <input type="text"></li>
+                <li class="pass"><span>PW</span> <input type="password"></li>
+             </ul>
+       </li>
+        	<li id="login-btn"><button>Login</button></li>
+    </ul>
+    	<ul class="btns">
+        	<li class="member"><a href="#">Sign-up</a></li><br>
+            <li class="member"><a href="#">Forgot ID/Password?</a></li>
+    	</ul>
+</div>
+</body>
+</html>
