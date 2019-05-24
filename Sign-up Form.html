@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+h3{
+	width:500px;
+}
+ul{
+	list-style:none;
+}
+.member{
+	padding:10px 0;
+	border-top:2px solid #FF0000;
+	border-bottom:2px solid #FF0000;
+	width:500px;
+	font-size:12px;
+	font-family:나눔고딕;
+	margin:10px;
+}
+.cols li{
+	display:inline-block;
+	margin-bottom:10px;
+}
+.col1{
+	width:100px;
+	text-align:right;
+}
+
+</style>
+</head>
+
+<body>
+<h3 class="intro">회원가입 양식</h3>
+<form>
+	<ul class="member">
+    	<li>
+        	<ul class="cols">
+            	<li class="col1">아이디:</li>
+                <li class="col2"><input type="text" required></li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">비밀번호:</li>
+                <li class="col2"><input type="password" required></li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">비밀번호 확인:</li>
+                <li class="col2"><input type="password" required></li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">이름:</li>
+                <li class="col2"><input type="text"></li>
+            </ul>
+        </li>
+         <li>
+        	<ul class="cols">
+            	<li class="col1">성별:</li>
+                <li class="col2"><input type="radio" name=gender checked>여성
+                <input type="radio" name=gender>남성
+                <input type="radio" name=gender>기타</li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">휴대전화:</li>
+                <li class="col2"><select>
+                <option>선택</option>
+                <option selected>010</option>
+                <option>011</option>
+                <option>016</option>
+                <option>017</option>
+                </select>-
+                <input type="text" maxlength="4" size="4">-<input type="text" maxlength="4" size="4"></li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">이메일:</li>
+                <li class="col2"><input type="text" size="12">@<select>
+                <option>선택</option>
+                <option>naver.com</option>
+                <option>daum.net</option>
+                <option>gmail.com</option>
+                </select></li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">취미:</li>
+                <li class="col2"><input type="checkbox" name="hobby1">음악감상
+                <input type="checkbox" name="hobby2">게임
+                <input type="checkbox" name="hobby3">등산
+                <input type="checkbox" name="hobby4">독서</li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">자기 소개:</li>
+                <li class="col2"><textarea cols="40" rows="5"></textarea></li>
+            </ul>
+        </li>
+        <li>
+        	<ul class="cols">
+            	<li class="col1">프로필 사진:</li>
+                <li class="col2"><input type="file">*2MB까지 가능</li>
+            </ul>
+        </li>
+    </ul>
+</form>
+</body>
+</html>
