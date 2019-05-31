@@ -13,7 +13,10 @@
 body{
 	background-color:#F6F6F6;
 }
-/*Header*/
+.wrap{ 
+	width:1080px;
+	margin:0 auto;
+	}
 ul{
 	list-style:none;
 }
@@ -22,39 +25,36 @@ ul{
 	margin:15px 0 0 15px;
 }
 /*Top Menu and Navigation Menu*/
-.top-menu{
+.top_menu{ 
 	float:right;
-	top:5px;
-	margin:10px 20px 10px 10px;
-}
-.main-menu{
-	background-color:black;
-	margin:10px 20px 10px 10px;
-	padding:1px;
-}
-.main-menu li{
-	background-color:black;
-	padding:15px 10px;
-}
-
-li{
-	display:inline-block;
+	margin:20px 10px 0 0;
+	}
+.top_menu li{display:inline;}
+.clear{clear:both;}
+.main_menu li{ 
+	display:inline;
+	font-size:18px;
+	padding:0 40px;
+	font-weight:bold;}
+.main_menu{
 	text-align:center;
-}
+	background-color:black;
+	color:#FFFFFF;
+	padding:15px;
+	margin-top:15px;}
 
-a{
-	text-decoration:none;
+a{ 	text-decoration:none;}
+
+.top_menu li a{color:#333333;}
+.main_menu li a{ 
+	color:#FFFFFF;
+	padding:15px;
 }
-.main-menu a{
-	color:white;
-}
-.top-menu a{
-	color:black;
-}
-.main-menu li a:hover{
-	background-color:#CCC;
-}
-/*Shopping Item List*/
+.main_menu li a:hover{
+	border-bottom:2px solid #999;
+	}
+
+/*Newly Arriced Items*/
 .new_arrival{
 	color:#666;
 }
@@ -65,10 +65,11 @@ a{
 .line{
 	border-bottom:solid 2px #666;
 }
-.image{
-	display:inline-block;
-	text-align:center;
+.item{
 	float:left;
+	text-align:center;
+	margin:20px 20px 20px 30px;
+	line-height:150%;
 }
 .dark_name{
 	color:#000;
@@ -78,14 +79,19 @@ a{
 }
 .red_price{
 	color:#F00;
+	font-weight:bold;
+}
+.blank{
+	padding:20px;
 }
 </style>
 </head>
 
 <body>
+<div class="wrap">
 <div class="logo"><img src="../images/My-Logo.png" width=150px></div>
 <!--Top Menu-->
-<div class="top-menu">
+<div class="top_menu">
 <ul>
 	<li><a href="#">Sign-In</a></li>
     <li>|</li>
@@ -102,8 +108,9 @@ a{
     <li><a href="#">Support</a></li>
 </ul>
 </div>
+
 <!--Navigation Menu-->
-<div class="main-menu">
+<div class="main_menu">
 <ul>
 	<li><a href="#">About Us</a></li>
     <li><a href="#">Shop</a></li>
@@ -111,73 +118,55 @@ a{
     <li><a href="#">Events</a></li>
     <li><a href="#">Registry</a></li>
     <li><a href="#">Help</a></li>
-    <li><a href="#">Sell</a></li>
 </ul>
 </div>
-
+<div class="blank"></div>
 <!--Newly Arrived Items-->
-<div class="new-arrival"><span class="new_arrival">NEW ARRIVAL</span>&nbsp;&nbsp;신규 상품</div>
+<div class="new-arrival"><span class="new_arrival">NEWLY ARRIVED</span>&nbsp;&nbsp;Today's Deal</div>
 <div class="line"></div>
 <br>
-<div class="image">
-	<img src="../images/figurine1.jpg" width=250px>
-	<br>
-	<span class="dark_name">Assassins Creed Figure Unity Arno</span>
-    <br>
-    <span class="gray_exp">New condition</span>
-    <br>
-    <span class="red_price">￡231.97</span>
-</div>
 
-<div class="image">
-	<img src="../images/figurine2.jpg" width=250px>
-    <br>
-    <span class="dark_name">Aguilar Color Tops Action Figure</span>
-    <br>
-    <span class="gray_exp">New condition</span>
-    <br>
-    <span class="red_price">US $18.54</span>
-</div>
+<ul class="item">
+	<li><img src="../images/figurine1.jpg" width=250px height=230px></li>
+    <li class="dark_name">Assassins Creed Figure Unity Arno</li>
+    <li class="gray_exp">New condition</li>
+    <li class="red_price">￡231.97</li>
+</ul>
 
-<div class="image">
-	<img src="../images/figurine3.jpg" width=250px>
-    <br>
-    <span class="dark_name">Edward Kenway Assassin Pirate PVC Statue</span>
-    <br>
-    <span class="gray_exp">Not Available</span>
-    <br>
-    <span class="red_price">R3,273.00</span>
-</div>
+<ul class="item">
+	<li><img src="../images/figurine2.jpg" width=250px height=230px></li>
+    <li class="dark_name">Aguilar Color Tops Action Figure</li>
+    <li class="gray_exp">New condition</li>
+    <li class="red_price">US $18.54</li>
+</ul>
 
-<div class="image">
-	<img src="../images/figurine4.jpg" width=250px>
-    <br>
-    <span class="dark_name">Jacob Frye 12.9" Vinyl Statue</span>
-    <br>
-    <span class="gray_exp">Pre-Order</span>
-    <br>
-    <span class="red_price">$89.90 NZD</span>
-</div>
+<ul class="item">
+	<li><img src="../images/figurine3.jpg" width=250px height=230px></li>
+    <li class="dark_name">Edward Kenway Assassin Pirate PVC Statue</li>
+    <li class="gray_exp">Not Available</li>
+    <li class="red_price">R3,273.00</li>
+</ul>
 
-<div class="image">
-	<img src="../images/figurine5.jpg" width=250px>
-    <br>
-    <span class="dark_name">Evie Frye Figure Statue</span>
-    <br>
-    <span class="gray_exp">New condition</span>
-    <br>
-    <span class="red_price">C $345.00</span>
-</div>
+<ul class="item">
+	<li><img src="../images/figurine4.jpg" width=250px height=230px></li>
+    <li class="dark_name">Jacob Frye 12.9" Vinyl Statue</li>
+    <li class="gray_exp">Pre-Order</li>
+    <li class="red_price">$89.90 NZD</li>
+</ul>
 
-<div class="image">
-	<img src="../images/figurine6.jpg" width=250px>
-    <br>
-    <span class="dark_name">Edward Kenway Action Figure</span>
-    <br>
-    <span class="gray_exp">New condition</span>
-    <br>
-    <span class="red_price">$38.88</span>
-</div>
+<ul class="item">
+	<li><img src="../images/figurine5.jpg" width=250px height=230px></li>
+    <li class="dark_name">Evie Frye Figure Statue</li>
+    <li class="gray_exp">New condition</li>
+    <li class="red_price">C $345.00</li>
+</ul>
 
+<ul class="item">
+	<li><img src="../images/figurine6.jpg" width=250px height=230px></li>
+    <li class="dark_name">Edward Kenway Action Figure</li>
+    <li class="gray_exp">New condition</li>
+    <li class="red_price">$38.88</li>
+</ul>
+</div>
 </body>
 </html>
