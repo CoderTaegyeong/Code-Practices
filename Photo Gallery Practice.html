@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Photo Gallery</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+#logo, #top_menu{
+        display:inline-block;
+    }
+#logo{
+	font-size:16px;
+	color:#3e2b23;
+	padding-top:10px;
+	padding-left:30px;
+}
+#top_menu{
+	padding-top:10px;
+	padding-right:10px;
+	float:right;
+}
+#top_menu li{
+	list-style:none;
+    display:inline;
+}
+#header{
+	width:800px;
+	height:40px;
+	background-color:#dddddd;
+}
+#left, #left a{
+	width:150px;
+	height:600px;
+	background-color:#343333;
+	color:#e2e2e2;
+}
+h3{
+	padding-top:20px;
+	padding-left:30px;
+}
+#listbox{
+	font-size:14px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:5px;
+	padding-left:25px;
+}
+#listbox li{
+	list-style:none;
+	padding:3px;
+}
+#right{
+	width:650px;
+	height:600px;
+	background-color:#252525;
+}
+#left, #right{
+	display:inline-block;
+	float:left;
+}
+#main_title{
+	width:572px;
+	padding:10px;
+	border:5px solid #444444;
+	margin-top:24px;
+	margin-right:24px;
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+}
+#main_img{
+	padding-top:15px;
+	padding-left:24px;
+}
+#thumbnail{
+	padding-top:30px;
+	padding-left:70px;
+}
+#move_left{
+	padding-top:20px;
+	padding-right:5px;
+	padding-left:40px;
+	float:left;
+}
+#photos li{
+	border:5px solid #3d3d3d;
+	display:inline-block;
+	list-style:none;
+	padding-top:3px;
+	margin-left:10px;
+	float:left;
+}
+#photos li:hover{
+	border:5px solid #ffffff;
+}
+#move_right{
+	padding-top:20px;
+	margin-left:20px;
+}
+#move_left, #move_right{
+	display:inline-block;
+}
+a{
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+	<div id="header">
+    	<div id="logo">
+        Photo Gallery
+        </div>
+        <div id="top_menu">
+        	<ul>
+            	<li>로그인|</li>
+                <li>회원가입|</li>
+                <li>마이페이지</li>
+            </ul>
+        </div>
+    </div>
+    <div id="left">
+    		<h3>포토갤러리</h3>
+            <ul id="listbox">
+            	<li><a href="#">+풍경</a></li>
+                <li><a href="#">+일상</a></li>
+                <li><a href="#">+인물</a></li>
+                <li><a href="#">+가족</a></li>
+            </ul>
+    </div>
+    <div id="right">
+        <div id="main_title">풍경 사진</div>
+        <img id="main_img" src="../images/b-1.jpg">
+        <div id="thumbnail">
+    	<a href="#"><img id="move_left" src="../images/bt_move_left.gif"></a>
+    	   <ul id="photos">
+        	   <li><a href="#"><img src="../images/s-1.jpg"></a></li>
+                <li><a href="#"><img src="../images/s-2.jpg"></a></li>
+                <li><a href="#"><img src="../images/s-3.jpg"></a></li>
+                <li><a href="#"><img src="../images/s-4.jpg"></a></li>
+                <li><a href="#"><img src="../images/s-5.jpg"></a></li>
+            </ul>
+        <a href="#"><img id="move_right" src="../images/bt_move_right.gif"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
